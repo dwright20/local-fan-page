@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="juventus-favicon.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Juventus Today</title>
+</head>
+<body>
+    <div id="main">
+        <img src="juventus-logo.png" id="emblem" />
+        <div class="content">
+            <div id="content-col">
+                <p>Country: {{.Stat.Country}}</p>
+                <p>League: {{.Stat.League}}</p>
+            </div>
+            <div id="content-col">
+                <p>Record: {{.Stat.Record}}</p>
+                <p>Home: {{.Stat.Home}}</p>
+            </div>
+            <div id="content-col">
+                <p>Points: {{.Stat.Points}}</p>
+                <p>Goals: {{.Stat.Goals}}</p>
+            </div>
+            <div id="content-col">
+                <p>Position: {{.Stat.Position}}</p>
+                <p>Goal Diff: {{.Stat.Diff}}</p>
+            </div>
+        </div>
+        <div id="sites">
+            <ul>
+                <li><a href="{{.Sites.Twitter}}" target="_blank">Twitter</a></li>
+                <li><a href="{{.Sites.Instagram}}" target="_blank">Instagram</a></li>
+                <li><a href="{{.Sites.Team}}" target="_blank">Team Site</a></li>
+                <li><a href="{{.Sites.Who}}" target="_blank">WhoScored</a></li>
+                <li><a href="{{.Sites.Espn}}" target="_blank">ESPN</a></li>
+            </ul>
+        </div>
+        <div id="table-content">
+            <table id="trioTable">
+                <tr>
+                    <th><a href="https://old.reddit.com/r/soccer" target="_blank">/r/soccer</a></th>
+                </tr>
+                    {{.Table.Soccer}}
+            </table>
+            <table id="trioTable">
+                <tr>
+                    <th><a href="https://www.reddit.com/r/soccer/search?q=juventus&restrict_sr=on&sort=top&t=day" target="_blank">/r/soccer/top - juventus</a></th>
+                </tr>
+                    {{.Table.SoccerTop}}
+            </table>
+            <table id="trioTable">
+                <tr>
+                    <th><a href="https://www.reddit.com/r/Juve/top/" target="_blank">/r/juve/top</a></th>
+                </tr>
+                    {{.Table.Team}}
+            </table>
+        </div>
+        <div id="table-content">
+            <table id="duoTable">
+                <tr>
+                    <th colspan="4"><a href="https://bleacherreport.com/juventus/schedule" target="_blank">Schedule</a></th>
+                <tr>
+                    {{.Table.Schedule}}
+            </table>
+            <table id="duoTable">
+                <tr>
+                    <th colspan="4"><a href="https://fbref.com/en/squads/e0652b02/Juventus" target="_blank">Roster</a></th>
+                <tr>
+                <tr>
+                    <th>Player</th>
+                    <th>Nation</th>
+                    <th>Position</th>
+                    <th>Age</th>
+                </tr>
+                    {{.Table.Roster}}
+            </table>
+        </div>
+    </div>
+</body>
+</html>
