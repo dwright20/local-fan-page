@@ -5,7 +5,7 @@ Local fan page scrapes content from various sports/information sites and consoli
 
 ## Code Summary
 - Created a [scraper](https://github.com/dwright20/local-fan-page/blob/master/Go/scraper.go) package that is called to scrape given web page URLs and return the results. 
-- [Team.go](https://github.com/dwright20/local-fan-page/blob/master/Go/) is tailored to a specific team and passes resources into scraper functions to produce content for HTML templates that are served to the client's browser via Mux.
+- [Team.go](https://github.com/dwright20/local-fan-page/blob/master/Go/) contains the main file that is tailored to a specific team, and passes resources into the scraper functions to produce content for the HTML templates that are served to the client's browser via Mux.
 - All [HTML](https://github.com/dwright20/local-fan-page/blob/master/HTML) must be tailored to a specific team as well.  Provided code to show how data is being passed. 
 ### Key Packages/Examples Used
 - [go.rice](https://github.com/GeertJohan/go.rice) - embedding static content
