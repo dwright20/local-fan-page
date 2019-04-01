@@ -3,6 +3,7 @@ Local fan page scrapes content from various sports/information sites and consoli
 
 ![Juventus Fan Page](https://github.com/dwright20/local-fan-page/blob/master/Examples/juve-fan-page.png)
 
+### [Examples](https://github.com/dwright20/local-fan-page/blob/master/Examples)
 ## Code Summary
 - I created a [scraper](https://github.com/dwright20/local-fan-page/blob/master/Go/scraper.go) package that is called to scrape given web page URLs and return the results. 
 - [Team.go](https://github.com/dwright20/local-fan-page/blob/master/Go/) contains the main files that are each tailored toward a specific team.  It passes resources into the scraper functions to produce content for the HTML templates, which are served to the user's browser via Mux.
