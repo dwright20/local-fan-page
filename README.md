@@ -1,7 +1,7 @@
 # Local Fan Page
 Local fan page scrapes content from various sports/information sites and consolidates the data into a web page that is locally hosted and accessible. This is done by producing a binary that contains all static content and the code to generate the dynamic content.  The first release is built around my favorite soccer team, Juventus, but I do plan to create implementations for other teams and sports.
 
-![Juventus Fan Page](https://github.com/dwright20/local-fan-page/blob/master/Examples/juve-fan-page.png)
+![Juventus Fan Page](https://github.com/dwright20/local-fan-page/blob/master/Examples/juve.png)
 
 ### [Examples](https://github.com/dwright20/local-fan-page/blob/master/Examples)
 ## Code Summary
